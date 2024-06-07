@@ -1,0 +1,33 @@
+{
+  "name": "import-export",
+  "version": "1.0.0",
+  "description": "Домашнее задание к лекции «Модули»",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server",
+    "lint": "eslint .",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cen-2-rion/Import-Export.git"
+  },
+  "author": "Cen-2-rion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cen-2-rion/Import-Export/issues"
+  },
+  "homepage": "https://github.com/Cen-2-rion/Import-Export#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.4.0",
+    "globals": "^15.4.0",
+    "html-webpack-plugin": "^5.6.0",
+    "http-server": "^14.1.1",
+    "mini-css-extract-plugin": "^2.9.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
