@@ -6,8 +6,7 @@ module.exports = {
     entry: './src/index.js', // точка входа
 
     output: {
-        filename: 'bundle.js', // файл для результатов 
-        path: path.resolve(__dirname, 'result') // папка для сборки бандлов
+        path: path.resolve(__dirname, 'dist') // папка для сборки бандлов
     },
 
     module: {
@@ -25,10 +24,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html', // шаблон
-            filename: 'bundle.html' // имя файла
+            filename: 'index.html' // имя файла
         }),
-        new MiniCSSExtractPlugin({
-            filename: 'bundle.css'
-        })
+        new MiniCSSExtractPlugin()
     ]
 }
